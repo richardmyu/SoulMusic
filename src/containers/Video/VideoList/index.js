@@ -1,18 +1,18 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './index.css';
-import {Link} from 'react-router-dom';
-import {getMvFirst,getMvInfo} from '../../../api/home'
+import { Link } from 'react-router-dom';
+import { getMvFirst, getMvInfo } from '../../../api/home'
 import Tab from '../../../components/Tab'
 export default class VideoList extends Component {
 
     constructor() {
         super();
-        this.state = {video: [],videoInfo:[]}
+        this.state = { video: [], videoInfo: [] }
 
     }
     componentDidMount() {
         getMvFirst().then(res => {
-            this.setState({video: res.data});
+            this.setState({ video: res.data });
         });
     }
     render() {
@@ -20,11 +20,11 @@ export default class VideoList extends Component {
         return (
             <div className="video_demo">
                 {
-                    videos.map((item,index)=>(
+                    videos.map((item, index) => (
                         <div className="video_list" key={item.artistId}>
                             <div className="video_list_cover">
                                 <Link to={`/videopage?id=${item.artistId}`}>
-                                <img src={item.cover}/>
+                                    <img src={item.cover} />
                                 </Link>
                             </div>
                             <div className="video_list_pages">
@@ -37,7 +37,7 @@ export default class VideoList extends Component {
                         </div>
                     ))
                 }
-                <Tab title="视频"/>
+                <Tab title="视频" />
             </div>
         )
     }

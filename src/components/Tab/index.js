@@ -1,13 +1,13 @@
-import React,{Component} from 'react';
-import {withRouter} from 'react-router-dom'
+import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom'
 import './index.less'
-class Tab extends Component{
-  render(){
+class Tab extends Component {
+  render() {
     return (
-        <div className="tab">
-          <i className="iconfont icon-fanhui" onClick={()=>this.props.history.goBack()}></i>
-          <span>{this.props.title}</span>
-        </div>
+      <div className="tab">
+        <i className="iconfont icon-fanhui" onClick={() => this.props.history.goBack()}></i>
+        <span>{this.props.title}</span>
+      </div>
     )
   }
 }

@@ -1,5 +1,5 @@
 import * as types from '../action-types'
-import {getSongMenuDetail,getOneSong} from '../../api/home'
+import { getSongMenuDetail, getOneSong } from '../../api/home'
 
 let actions = {
     fetchPlayList(id) {
@@ -8,7 +8,7 @@ let actions = {
 
                 dispatch({
                     type: types.ADD_PLAYLIST
-                    , tracks:res.playlist.tracks.slice(0,10)
+                    , tracks: res.playlist.tracks.slice(0, 10)
                 })
             })
         }
@@ -16,7 +16,7 @@ let actions = {
     fetchGetSong(id) {
         return function (dispatch, getState) {
             getOneSong(id).then(res => {
-                console.log("123",res.data[0].url);
+                console.log("123", res.data[0].url);
                 dispatch({
                     type: types.GET_ONE_SONG
                     , SongData: res.data

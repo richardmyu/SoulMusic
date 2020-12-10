@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './index.css';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default class SongView extends Component {
     render() {
@@ -14,7 +14,7 @@ export default class SongView extends Component {
                             <Link to={`/single?id=${item.id}`}>
                                 <div className="songview-cover">
                                     <div className="songview-img">
-                                        <img src={item.song.album.blurPicUrl} alt=""/>
+                                        <img src={item.song.album.blurPicUrl} alt="" />
                                     </div>
                                     <div className="songview-demand"> </div>
                                     <div className="songview-author"> </div>

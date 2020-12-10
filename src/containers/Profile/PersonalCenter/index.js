@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import MyInfoData from '../MyInfoData';
 import CollectionSongList from '../CollectionSongList';
 import PersonalDynamic from '../PersonalDynamic';

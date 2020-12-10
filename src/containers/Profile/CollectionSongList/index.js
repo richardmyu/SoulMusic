@@ -1,7 +1,7 @@
-import React,{Component} from 'react';
+import React, { Component } from 'react';
 import './index.css'
-export default class CollectionSongList extends Component{
-    render(){
+export default class CollectionSongList extends Component {
+    render() {
         return (
             <ul className="CollectionSongList">
                 <li aria-current={true} className="list-item">歌单(1)</li>

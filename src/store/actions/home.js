@@ -1,5 +1,5 @@
 import * as types from '../action-types'
-import {getSliders} from '../../api/home'
+import { getSliders } from '../../api/home'
 
 let actions = {
     fetchSliders() {
@@ -7,7 +7,7 @@ let actions = {
             getSliders().then(res => {
                 console.log(res);
                 dispatch({
-                    type: types.GET_SLIDERS ,
+                    type: types.GET_SLIDERS,
                     sliders: res
                 })
             })

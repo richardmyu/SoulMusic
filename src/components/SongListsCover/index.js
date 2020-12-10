@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 // import {Link} from 'react-router-dom';
 import './index.css';
 
@@ -7,14 +7,14 @@ import './index.css';
 export default class SongListsCover extends Component {
   constructor() {
     super();
-      console.log(this.props.PlayList,1111);
+    console.log(this.props.PlayList, 1111);
   }
 
   render() {
     return (
       <div className="songlists-title">
         <div className="songlists-avater">
-          <img src={} alt=""/>
+          <img src={ } alt="" />
         </div>
         <div className="songlists-name">
           <span>华语Future Bass,清新跳动的美妙旋律</span>

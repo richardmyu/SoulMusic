@@ -1,6 +1,6 @@
 
-import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './index.css';
 //歌曲列表，可复用
 export default class SongLists extends Component {
@@ -10,11 +10,11 @@ export default class SongLists extends Component {
             <div className="songlists">
                 <ul>
                     {
-                        this.props.tracks.slice(0,45).map((item,index)=>(
+                        this.props.tracks.slice(0, 45).map((item, index) => (
 
-                            <Link to={`/single?gd=${gd}&id=${item.id}`}  key={item.id}>
+                            <Link to={`/single?gd=${gd}&id=${item.id}`} key={item.id}>
                                 <li>
-                                    <div className="songlist-left">{index+1}</div>
+                                    <div className="songlist-left">{index + 1}</div>
                                     <div className="songlist">
                                         <p className="songlist-name">{item.name}</p>
                                         <p>{item.ar[0].name} - {item.al.name}</p>

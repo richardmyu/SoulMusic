@@ -1,14 +1,14 @@
-import {Link} from 'react-router-dom'
-import React, {Component} from 'react';
+import { Link } from 'react-router-dom'
+import React, { Component } from 'react';
 import './index.css';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import actions from "../../store/actions/session";
 
 class NavLeft extends Component {
-    componentDidMount(){
+    componentDidMount() {
         this.props.validate();
     }
-    handleLogout=()=>{
+    handleLogout = () => {
         this.props.logout();
     }
     render() {
@@ -17,7 +17,7 @@ class NavLeft extends Component {
                 <li className="user">
                     <Link to="/profile">
                         {
-                            this.props.user?<img src={require('../../images/1.jpg')}/>:<img src={require('../../images/avater.jpg')}/>
+                            this.props.user ? <img src={require('../../images/1.jpg')} /> : <img src={require('../../images/avater.jpg')} />
                         }
                     </Link>
                     <div>

@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './MusicInfo.css'
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 import actions from "../../../store/actions/playList";
 class MusicInfo extends Component {
     constructor() {
@@ -9,32 +9,32 @@ class MusicInfo extends Component {
             isSong: false
         }
     }
-    componentDidMount(){
+    componentDidMount() {
         // this.props.fetchPlayList();
     }
 
-    componentDidUpdate(){
+    componentDidUpdate() {
 
-}
+    }
     handleSong = () => {
-        this.setState({isSong: !this.state.isSong})
+        this.setState({ isSong: !this.state.isSong })
     };
-     reg=/\[\d{2}:\d{2}.\d{3}\]/g;
-     regCn=/\]([^\x00-\xff]+)/g;
+    reg = /\[\d{2}:\d{2}.\d{3}\]/g;
+    regCn = /\]([^\x00-\xff]+)/g;
     musicInfo = () => (
         <div className='musicInfo'>
             <div className='musicInfo-middle'>
                 <div className='musicInfo-pic'
-                     style={this.props.isPlay ? {animationPlayState: "running"} : {animationPlayState: "paused"}}>
+                    style={this.props.isPlay ? { animationPlayState: "running" } : { animationPlayState: "paused" }}>
                     <img className='PicInfo'
-                         src={this.props.picUrl}
-                         alt=""/>
+                        src={this.props.picUrl}
+                        alt="" />
                 </div>
             </div>
             <div className='music-collect'>
-                           <span className='icon-collect iconfont icon-shoucang2'>
+                <span className='icon-collect iconfont icon-shoucang2'>
 
-                           </span>
+                </span>
             </div>
         </div>
     );
@@ -45,12 +45,12 @@ class MusicInfo extends Component {
                 {
                     this.state.isSong ? <div className='music-lrc'>
                         <div className='music-sound'>
-                   <span className='icon-sound iconfont icon-systemprompt'>
-                   </span>
+                            <span className='icon-sound iconfont icon-systemprompt'>
+                            </span>
                             {/**/}                <span className='sound-line'>
-                        </span>
+                            </span>
                             <span className='sound-lineBg'>
-                        </span>
+                            </span>
                         </div>
                         <div className='song-lrc'>
                             <p>
@@ -62,11 +62,11 @@ class MusicInfo extends Component {
 
                         </div>
                     </div> :
-                    this.musicInfo()
+                        this.musicInfo()
                 }
                 <span className='go-lrc iconfont icon-zhuomiangeci' onClick={this.handleSong}> </span>
                 <div className='music-bg'>
-                    <img className="music-bgImg" src={this.props.picUrl} alt=""/>
+                    <img className="music-bgImg" src={this.props.picUrl} alt="" />
                 </div>
                 <div className='music-bgMarkOne'></div>
                 <div className='music-bgMark'>
@@ -76,6 +76,6 @@ class MusicInfo extends Component {
     }
 }
 export default connect(
-    state=>state,
+    state => state,
     actions
 )(MusicInfo)

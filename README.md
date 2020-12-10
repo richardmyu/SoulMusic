@@ -2,12 +2,15 @@
 
 ### 环境运行
 
-- git clone 地址；
-- 找到 NeteaseCloudMusicApi 文件,剪切到其他文件内,解压 NeteaseCloudMusicApi 文件,使用 cmd 命令 `node app.js` 运行；
-- 回到 Soul Music 文件内 `npm install` 配置文件；
-- 然后启动 `server.js`；
-- `npm run dev`；
+克隆完成以后：
 
+1. `npm install`，安装包；
+
+2. 在 NeteaseCloudMusicApi 文件内启动 `node app.js`；
+
+3. 然后在 `server` 中启动 `server.js`；
+
+4. `npm run dev`；
 
 ### 技术栈
 
@@ -21,7 +24,7 @@
 
 ```
 |
-├─ NeteaseCloudMusicApi———– 网易云 API
+├─ NeteaseCloudMusicApi———– 网易云 API（这也是一个库，因而没有上传，即 github 中不可见）
 │  └─app.js——————– API 入口
 |
 ├─ server———– 项目后台

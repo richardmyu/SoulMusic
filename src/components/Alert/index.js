@@ -1,15 +1,15 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './index.css'
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import actions from '../../store/actions/session';
 class Alert extends Component {
   static defaultProps = {
     level: 'default'
   }
-  componentDidMount(){
-    setTimeout(()=>{
+  componentDidMount() {
+    setTimeout(() => {
       this.props.clearMessages();
-    },3000);
+    }, 3000);
   }
   render() {
     if (this.props.success) {

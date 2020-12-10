@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './index.css';
-import  {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 // import MenuLink from '../MenuLink'
 export default class HeaderBtn extends Component {
     render() {

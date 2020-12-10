@@ -1,14 +1,14 @@
 //获取轮播图数据
-export  const  GET_SLIDERS='GET_SLIDERS';
+export const GET_SLIDERS = 'GET_SLIDERS';
 
 
-export const ADD_PLAYLIST='ADD_PLAYLIST';
+export const ADD_PLAYLIST = 'ADD_PLAYLIST';
 
-export const CHANGE_SONG='CHANGE_SONG';
+export const CHANGE_SONG = 'CHANGE_SONG';
 
-export const GET_ONE_SONG="GET_ONE_SONG"
+export const GET_ONE_SONG = "GET_ONE_SONG"
 
-export const GET_ONE_SINGLE="GET_ONE_SINGLE"
+export const GET_ONE_SINGLE = "GET_ONE_SINGLE"
 //注册
 export const REG = 'REG';
 //登录
