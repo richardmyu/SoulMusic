@@ -82,3 +82,5 @@
 ```
 
 [2020-12-11] This is an old peoject, i'm preparing to update.
+
+[NeteaseCloudMusicApi](https://binaryify.github.io/NeteaseCloudMusicApi/#/?id=neteasecloudmusicapi)
