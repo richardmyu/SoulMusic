@@ -1,4 +1,7 @@
-# Soul Music
+# Intro
+
+![react](https://img.shields.io/badge/react-support-brightgreen.svg)
+![express](https://img.shields.io/badge/express-support-brightgreen.svg)
 
 ### 环境运行
 

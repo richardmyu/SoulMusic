@@ -1,5 +1,5 @@
 {
-  "name": "SoulMusic",
+  "name": "react-soul-music",
   "version": "1.0.0",
   "description": "- react\r - react-router\r - redux\r - nodejs\r - express",
   "main": "webpack.config.js",
@@ -740,10 +740,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/richardmyu/SoulMusic.git"
+    "url": "git+https://github.com/richardmyu/react-soul-music.git"
   },
   "bugs": {
-    "url": "https://github.com/richardmyu/SoulMusic/issues"
+    "url": "https://github.com/richardmyu/react-soul-music/issues"
   },
-  "homepage": "https://github.com/richardmyu/SoulMusic#readme"
+  "homepage": "https://github.com/richardmyu/react-soul-music#readme"
 }
